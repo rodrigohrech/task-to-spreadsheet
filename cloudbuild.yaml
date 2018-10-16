@@ -1,0 +1,12 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: [
+    'beta', 
+    'functions', 
+    'deploy', 
+    'task-to-spreadsheet', 
+    '--trigger-topic', 'text-to-task',
+    '--runtime', 'nodejs8', 
+    '--memory', '128MB', 
+    '--entry-point', 'sendToSpreadsheet']
+  dir: 'functions/autodeploy'

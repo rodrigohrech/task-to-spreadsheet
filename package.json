@@ -1,0 +1,8 @@
+{
+  "name": "task-to-spreadsheet",
+  "version": "0.0.1",
+  "dependencies": {
+    "@google-cloud/pubsub": "^0.18.0",
+    "googleapis": "^27.0.0"
+  }
+}
